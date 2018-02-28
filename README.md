@@ -9,7 +9,19 @@ station using auto complete.
 are the values for the fields with the source and destination train station.
 3. Copy these magic numbers (Some obscure long string, containing the name, the ID
 of the train station and something else I did not understand) into the source
-code and you are good to go.
+code.
 4. Done
+
+
+## Timeslot
+The programs checks by default the next trains. If you want to have anything
+else, the fields and values should look like this:
+
+- REQ0JourneyTime
+  - 15:00
+- REQ0JourneyDate
+  - Mo, 29.01.18
+
+Change it according to your needs.
 
 Have fun

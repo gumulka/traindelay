@@ -22,10 +22,13 @@ def main():
     """Main method. query website and prints times """
     url = 'https://reiseauskunft.bahn.de/bin/query.exe/dn'
     post_fields = {
+        """The starting train station"""
         'REQ0JourneyStopsS0ID': u'A=1@O=Empelde@X=9668986@Y=52340160' +
         '@U=81@L=008001781@B=1@p=1516311829@',
+        """The destination train station"""
         'REQ0JourneyStopsZ0ID': u'A=1@O=Hannover Hbf@X=9741017@Y=52376764@' +
         'U=80@L=008000152@B=1@p=1511926111@',
+        """Has to be given as an extra attribute"""
         'start': 'Suchen'
     }
     request = Request(url, urlencode(post_fields).encode())
